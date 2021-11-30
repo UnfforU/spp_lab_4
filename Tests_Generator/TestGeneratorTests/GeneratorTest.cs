@@ -2,7 +2,7 @@ using NUnit.Framework;
 
 namespace TestGeneratorTests
 {
-    public class Tests
+    public class GenetatorTest
     {
         [SetUp]
         public void Setup()
