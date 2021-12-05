@@ -7,13 +7,14 @@ namespace TestGeneratorApp
     {
         static void Main(string[] args)
         {
-            var src = @"..\..\Tests\Source";
-            var dest = @"..\..\Tests\Result";
-            var files = new string[] { "T1.cs", "T2.cs" };
+            var src = @"..\..\..\Tests\Source";
+            var files = new string[] { "T1.cs", "T3.cs" };
+            var dest = @"..\..\..\Tests\Result";
             var countTasks = 2;
 
             new Generator().Generate(src, dest, files, countTasks); 
-            Console.WriteLine("Success!");
+            //Console.WriteLine("Success!");
+            Console.ReadLine();
         }
     }
 }

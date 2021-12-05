@@ -36,7 +36,7 @@ namespace TestGeneratorLib.Block
             PublicModifier = Token(SyntaxKind.PublicKeyword);
 
             //Attributes
-            ClassAttribute = Attribute(ParseName("TestFicture"));
+            ClassAttribute = Attribute(ParseName("TestFixture"));
             SetupAttribute = Attribute(ParseName("SetUp"));
             MethodAttribute = Attribute(ParseName("Test"));
 

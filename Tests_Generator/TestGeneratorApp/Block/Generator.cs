@@ -20,13 +20,16 @@ namespace TestGeneratorApp.Block
 
             //Read files data
             var downloadStringBlock = new TransformBlock<string, string>
-                (
+            (
                 async path =>
                 {
-                    using (var reader = new StreamReader(path)) { return await reader.ReadToEndAsync(); }
+                    using (var reader = new StreamReader(path)) 
+                    { 
+                        return await reader.ReadToEndAsync(); 
+                    }
                 }, 
                 execOptions
-                );
+            );
 
             //Generate tests
             var generateTestsBlock = new TransformManyBlock<string, KeyValuePair<string, string>>
